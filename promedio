@@ -1,0 +1,18 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+using namespace std;
+
+void main ()
+{
+	float prom, a,b,c;
+	cout<<"introducir a :" ;
+	cin >> a;
+	cout<<"introducir b :" ;
+	cin>> b;
+	cout<<"introducir c :" ;
+	cin>> c;
+	prom = (a+b+c)/3.0;
+	cout<<"el promedio es : "<< prom;
+	getch();
+}
