@@ -1,0 +1,71 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#define MAX 100
+
+using namespace std;
+void interseccion(double A[],double B[],double C[],int na,int mb,int nc);
+void cargar (double A[] ,int na);
+void cargar (double B[] ,int nb);
+void mostrar (double C[] ,int nc);
+
+void main ()
+{
+	int na,nb,nc;
+	double A[MAX],B[MAX],C[MAX];
+	cout<<"introducir na: ";
+	cin>> na;
+	cargar(A,na);
+	cout<<"introducir nb: ";
+	cin>> nb;
+	cargar(B,nb);
+	//interseccion(A,B,C,na,nb,nc);
+	
+	mostrar(C,nc);
+	getch();
+}
+void cargar (double A[] ,int na)
+{
+	int i;
+	for(i = 0; i < na; i++)
+	{
+		cout<< "A["<<i<<"]";
+		cin>> A[i];
+	}
+}
+void cargar (double B[] ,int nb)
+{
+	int i;
+	for(i = 0; i < nb; i++)
+	{
+		cout<< "B["<<i<<"]";
+		cin>> B[i];
+	}
+}
+
+void mostrar (double C[] ,int nc)
+{
+	int i;
+	for(i = 0; i < nc; i++)
+	{
+		cout<< "C["<<i<<"]";
+	}
+}
+
+void interseccion(double A[],double B[],double C[],int na,int nb,int nc)
+{
+	bool sw;
+	int i;
+	nc = 0;
+	for(i = 0; i<na ;i++)
+	{
+		sw=pertenece(A[i],B,nb)
+			if(sw==true)
+			{
+				C[nc]=A[i];
+				nc++
+			}
+	}
+	
+
+}
